@@ -21,7 +21,8 @@ body {
 }
 
 header {
-    background-color: #eee;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 header .wrapper {
@@ -140,7 +141,8 @@ footer {
 
 @media (prefers-color-scheme: dark) {
     body {
-        background: #111;
+        background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg");
+        height: 100%;
     }
 
     body,
@@ -153,8 +155,8 @@ footer {
     }
     
     header {
-        background-color: indigo;
-/*        filter: blur(5px);*/
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
     }
 }
 
