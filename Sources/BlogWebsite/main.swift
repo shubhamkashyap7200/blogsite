@@ -27,10 +27,25 @@ try BlogWebsite().publish(using: [
     .installPlugin(.splash(withClassPrefix: "")),
     .addMarkdownFiles(),
     .copyResources(),
-    .generateHTML(withTheme: .foundation),
+    .generateHTML(withTheme: .basic),
     .generateRSSFeed(including: [.posts]),
     .generateSiteMap(),
 ])
+
+//try BlogWebsite().publish(using: [
+//  .copyResources(),
+//  .installPlugin(.splash(withClassPrefix: "")),
+//  .addMarkdownFiles(),
+//  .sortItems(by: \.date, order: .descending),
+//  .generateHTML(withTheme: .basic),
+//  .unwrap(RSSFeedConfiguration.default) { config in
+//      .generateRSSFeed(
+//        including: [.posts],
+//          config: config
+//      )
+//  },
+//  .generateSiteMap()
+//])
 
 //// This will generate your website using the built-in Foundation theme:
 //try BlogWebsite().publish(withTheme: .foundation)

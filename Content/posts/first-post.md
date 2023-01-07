@@ -7,7 +7,7 @@ tags: first, article
 
 My first post's text.
 
-```swift
+```
 var hello = "hello world"
 print(hello)
 ```
