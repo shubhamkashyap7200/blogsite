@@ -25,8 +25,8 @@ header {
 }
 
 header .wrapper {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     text-align: center;
 }
 
@@ -140,8 +140,7 @@ footer {
 
 @media (prefers-color-scheme: dark) {
     body {
-/*        background: #111;*/
-    background-image: url("https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg")
+        background: #111;
     }
 
     body,
@@ -154,8 +153,8 @@ footer {
     }
     
     header {
-        background: blue;
-/*        filter: blur(1px)*/
+        background-color: indigo;
+/*        filter: blur(5px);*/
     }
 }
 
